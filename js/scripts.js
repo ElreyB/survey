@@ -1,8 +1,10 @@
 $(document).ready(function() {
-  $("#name-form").submit(function() {
+  $("#survey-form").submit(function() {
     var nameInput = $("input#name").val();
-
+    var dietaryInput = $("select#dietary").val();
+    debugger;
     $(".name").text(nameInput);
+    $(".dietary").text(dietaryInput);
 
     $("#results").show();
 

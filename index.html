@@ -10,16 +10,26 @@
   </head>
   <body>
     <div class="container">
-      <form id="name-form">
+      <form id="survey-form">
         <div class="form-group">
           <label for="name">Name:</label>
           <input id="name" type="text" class="form-control">
         </div>
+
+        <div class="form-group">
+          <select class="form-control" id="dietary">
+            <option>Omnivore</option>
+            <option>Vegetarian</option>
+            <option>Vegan</option>
+            <option>Pescatarian</option>
+            <option>Gluten Free</option>
+          </select>
+        </div>
         <button type="submit" class="btn">Enter</button>
       </form>
-
       <div id="results">
         <p>Hi <span class="name"></span></p>
+        <p>Dietary option: <span class="dietary"></span></p>
       </div>
     </div>
   </body>
